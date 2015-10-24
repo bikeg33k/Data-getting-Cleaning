@@ -16,3 +16,5 @@ all funcitons for project are contained in run_analysis.R
     
  - final section: combine and calculates
     combines the dataframes and then summarizes them pullingout the STD and MEAN values for each activity for each Subject
+
+produceFile was added to the file in order to make it wasy to produce a flat file of the tidy data, as the assignment was unclear if .  This file will not match what was submitted for the homework, as the homework submitted requested row.name=false.
