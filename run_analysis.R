@@ -48,3 +48,5 @@ summarizedData <- combinedData[, grep("mean\\(\\)|std\\(\\)|activity|subject",
                                           value = TRUE)] %>%
                                         group_by(activity, subject) %>% 
                                         summarize_each(funs(mean))
+
+produceFile <- function(path = summarizedData){write.table(summarizedData,file="tidy_data.txt")}
